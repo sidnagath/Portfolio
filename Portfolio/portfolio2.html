@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Minimal Custom CSS -->
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --text-main: #333;
+      --text-light: #555;
+      --bg-light: #f8f9fa;
+      --radius: 14px;
+      --space: 1.2rem;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--text-main);
+      background: white;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 6rem 0;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    
+      /* Section spacing */
+    section {
+      padding: 4rem 0;
+    }
+
+    /* Card Shadow */
+    .soft-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: var(--space);
+      border: 1px solid #eaeaea;
+      transition: 0.3s ease;
+    }
+    .soft-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+
+    footer {
+      padding: 1.5rem 0;
+      background: var(--bg-light);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light py-3 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MyPortfolio</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-primary text-white px-3" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero text-center">
+    <div class="container d-flex flex-column">
+      <h1>Hello, I'm Sidharth 👋</h1>
+      <p class="lead text-muted mt-3">Web Developer • UI/UX Enthusiast • Lifelong Learner</p>
+          <a href="#projects" class="btn btn-primary btn-lg mt-4">View My Work</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2 class="text-center mb-4">About Me</h2>
+
+      <div class="row align-items-center g-4">
+        <div class="col-md-5">
+          <img src="./generated - Copy.jpg" class="img-fluid rounded-3" alt="">
+        </div>
+
+        <div class="col-md-7">
+          <p class="text-muted">
+            I'm a passionate developer who loves creating clean, modern, and responsive websites.
+            I focus on writing semantic HTML, clean CSS, and intuitive UI layouts that work on all devices.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo praesentium, accusamus animi laudantium quae consectetur deserunt cumque provident possimus illo aliquam ea reiciendis laboriosam. Vitae blanditiis minus at eaque deserunt?
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+<section id="services" class="bg-light">
+ <div class="container">
+     <h2 class="text-center mb-4">Services</h2>
+
+     <div class="row g-4">
+       
+       <div class="col-md-6 col-lg-4">
+         <div class="soft-card">
+           <h5>SEO Services</h5>
+           <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto sint aliquam.</p>
+         </div>
+       </div>
+
+
+        <div class="col-md-6 col-lg-4">
+         <div class="soft-card">
+           <h5>Marketing</h5>
+           <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto sint aliquam.</p>
+         </div>
+       </div>
+
+        <div class="col-md-6 col-lg-4">
+         <div class="soft-card">
+           <h5>UX Design</h5>
+           <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto sint aliquam.</p>
+         </div>
+       </div>
+
+     </div>
+ </div>
+</section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card">
+            <h5>HTML & CSS</h5>
+            <p class="text-muted">Strong foundation with responsive layouts & semantics.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card">
+            <h5>JavaScript</h5>
+            <p class="text-muted">DOM, ES6+, animations, interactivity, logic building.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card">
+            <h5>Bootstrap / Tailwind</h5>
+            <p class="text-muted">Fast UI development with clean component design.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Projects</h2>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card">
+            <img src="https://via.placeholder.com/600x400" class="img-fluid rounded mb-3" alt="">
+            <h5>Project One</h5>
+            <p class="text-muted">A responsive landing page built with Bootstrap.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card">
+            <img src="https://via.placeholder.com/600x400" class="img-fluid rounded mb-3" alt="">
+            <h5>Project Two</h5>
+            <p class="text-muted">Clean UI portfolio with semantic HTML.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="soft-card">
+            <img src="https://via.placeholder.com/600x400" class="img-fluid rounded mb-3" alt="">
+            <h5>Project Three</h5>
+            <p class="text-muted">Interactive JS components and animations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="soft-card">
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4"></textarea>
+            </div>
+
+            <button class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="text-muted mb-0">© 2025 Sidharth. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
